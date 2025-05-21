@@ -1,0 +1,865 @@
+/* brutalism.css */
+body {
+  background: #fff200;
+  color: #000;
+  font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Burger button */
+.brutal-nav-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: 2px solid #FFD900;
+  color: #FFD900;
+  padding: 0.3rem 0.75rem;
+  display: none;
+  cursor: pointer;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .brutal-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #000;
+    border-top: 2px dashed #FFD900;
+    margin-top: 1rem;
+  }
+
+  .brutal-nav a {
+    margin: 0.5rem 1rem;
+    border-bottom: 1px solid #FFD900;
+  }
+
+  .brutal-nav.show {
+    display: flex;
+  }
+
+  .brutal-nav-toggle {
+    display: inline-block;
+  }
+}
+
+.brutal-header {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-bottom: 4px solid #FFD900; /* neon yellow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brutal-logo {
+  color: #FFD900;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #FFD900;
+  padding: 0.3rem 0.75rem;
+  background: #000;
+}
+
+.brutal-logo:hover {
+  background-color: #FFD900;
+  color: #000;
+  transform: scale(1.05);
+}
+
+
+.site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  background: #fff;
+  color: #000;
+  padding: 0.3rem 1rem;
+  border: 3px solid #000;
+  display: inline-block;
+}
+
+.brutal-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+}
+.brutal-nav a:hover,
+.brutal-nav a:focus {
+  background-color: #6A0DAD; /* ungu tua */
+  color: #FFD900;
+  border: 2px dashed #FFD900;
+  transform: scale(1.05);
+}
+
+.brutal-section {
+  border-top: 4px solid #000;
+  padding: 2rem 1rem;
+  background: #fff;
+  color: #000;
+}
+
+.accent-bg {
+  background: #00ffff;
+}
+
+ul {
+  list-style: square inside;
+  padding: 0;
+}
+
+.btn-brutal {
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 3px solid #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.btn-brutal.large {
+  font-size: 1.25rem;
+  padding: 1.25rem 2.5rem;
+}
+
+@media (max-width: 576px) {
+  .brutal-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brutal-nav {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .brutal-nav a {
+    display: inline-block;
+    margin: 0.25rem 0.5rem 0 0;
+  }
+}
+
+
+.brutal-footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  border-top: 5px solid #fff200;
+}
+
+
+.brutal-hero-section {
+  background: #fffc00;
+  color: #000;
+  padding: 4rem 0;
+  border-bottom: 5px solid #000;
+}
+
+.brutal-title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.brutal-tagline {
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-left: 5px solid #000;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+.brutal-btn {
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border: 3px solid #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.brutal-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.brutal-image-frame {
+  border: 4px solid #000;
+  padding: 1rem;
+  background: #fff;
+}
+
+.brutal-about-section {
+  background: #fff;
+  color: #000;
+  padding: 4rem 0;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+
+.brutal-box {
+  background: #fdfdfd;
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0 #000;
+  padding: 2rem;
+}
+
+
+.brutal-heading {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  border-bottom: 4px double #000;
+  padding-bottom: 0.5rem;
+}
+
+.brutal-subbox {
+  background: #fffc00;
+  padding: 2rem;
+  border: 3px dashed #000;
+}
+
+.brutal-subtitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  background: #000;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+}
+
+.brutal-paragraph {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.brutal-why-us-section {
+  background: #fff;
+  padding: 4rem 0;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+}
+
+.brutal-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.brutal-list li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.brutal-bullet {
+  background: #fffc00;
+  color: #000;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  margin-right: 1rem;
+  border: 2px solid #000;
+}
+
+.brutal-img-wrapper {
+  border: 4px solid #000;
+  padding: 8px;
+  display: inline-block;
+  box-shadow: 5px 5px 0 #000;
+}
+
+.brutal-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.work-section {
+  background: #fff;
+  padding: 4rem 0;
+  border-top: 6px solid #000;
+}
+
+.work-heading {
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-bottom: 4px dashed #000;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.work-paragraph {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.work-card {
+  border: 4px solid #000;
+  box-shadow: 6px 6px 0 #000;
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+
+.work-card:hover {
+  transform: scale(1.02);
+}
+
+.work-img-top {
+  width: 100%;
+  border-bottom: 4px solid #000;
+}
+
+.work-card-body {
+  padding: 1.2rem;
+}
+
+.work-badge {
+  background: #fffc00;
+  color: #000;
+  border: 2px solid #000;
+  display: inline-block;
+  font-weight: 900;
+  padding: 0.3rem 0.6rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.work-card-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.brutal-faq-section {
+  background: #fff;
+  padding: 4rem 1rem;
+  border-top: 4px solid #000;
+  color: #000;
+}
+
+.brutal-faq-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.brutal-faq-title p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.brutal-faq-item {
+  border: 2px solid #000;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  background: #f7f7f7;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.brutal-faq-item h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.brutal-faq-item .faq-content {
+  display: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.brutal-faq-item.active .faq-content {
+  display: block;
+}
+
+.faq-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+
+/* Call to Action Section - Brutalism Style */
+.cta-section {
+  background-color: #ffeb3b;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+  padding: 3rem 1rem;
+  color: #000;
+  text-align: center;
+}
+
+.cta-heading {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.cta-subtext {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 3px solid #000;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border: 3px dashed #000;
+  transform: scale(1.05);
+}
+
+
+
+
+/* Brutalist Subscribe Section */
+.brutal-subscribe-section {
+  background-color: #ffff00; /* shocking yellow background */
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+  padding: 4rem 1.5rem;
+  color: #000;
+  font-family: 'Courier New', monospace;
+  text-align: left;
+  position: relative;
+}
+
+.brutal-subscribe-content h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.brutal-subscribe-content .highlight-box {
+  background-color: #000;
+  color: #fff;
+  padding: 0.2em 0.5em;
+  font-size: 1.1em;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.brutal-subscribe-content .word {
+  padding: 0.2em 0.5em;
+  font-size: 1.1em;
+}
+
+.brutal-subscribe-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 900;
+  border: 4px solid #000;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 4px 4px 0 #ff00ff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brutal-subscribe-btn:hover {
+  background: #fff;
+  color: #000;
+  border: 4px dashed #000;
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 6px 6px 0 #ff00ff;
+}
+
+.brutal-subscribe-image img {
+  width: 100%;
+  border: 5px solid #000;
+  background: #fff;
+  padding: 0.5rem;
+  transform: rotate(1deg);
+  box-shadow: 6px 6px 0 #000;
+}
+
+
+.brutal-blog-section {
+  border-top: 4px solid #000;
+  padding: 4rem 1rem;
+  background-color: #fdfdfd;
+  font-family: 'Courier New', monospace;
+}
+
+.brutal-section-title h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-bottom: 4px solid #000;
+  padding-bottom: 0.5rem;
+}
+
+.brutal-section-title p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.brutal-blog-card {
+  border: 4px solid #000;
+  padding: 1rem;
+  background-color: #fff700;
+  color: #000;
+  box-shadow: 6px 6px 0 #ff00ff;
+  transition: transform 0.2s ease;
+}
+
+.brutal-blog-card:hover {
+  transform: rotate(-1deg) scale(1.02);
+}
+
+.brutal-card-img {
+  width: 100%;
+  border: 3px solid #000;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+.brutal-blog-content h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.brutal-date {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.brutal-read-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #000;
+  color: #fff;
+  border: 3px solid #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.brutal-read-btn:hover {
+  background: #fff;
+  color: #000;
+  border: 3px dashed #000;
+}
+
+
+/* Team Section - Brutalist Style */
+.brutal-team-section {
+  position: relative;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+  padding: 4rem 1rem;
+  color: #000;
+}
+
+.brutal-team-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23000' stroke-width='1'%3E%3Cpath d='M0 10 H100 M0 20 H100 M0 30 H100 M0 40 H100 M0 50 H100 M0 60 H100 M0 70 H100 M0 80 H100 M0 90 H100 M10 0 V100 M20 0 V100 M30 0 V100 M40 0 V100 M50 0 V100 M60 0 V100 M70 0 V100 M80 0 V100 M90 0 V100'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100px 100px;
+  opacity: 0.05;
+  z-index: 0;
+  animation: glitch-move 15s linear infinite;
+}
+@keyframes glitch-move {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(20px, 10px); }
+  100% { transform: translate(0, 0); }
+}
+
+.brutal-team-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.brutal-section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.brutal-section-title p {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.brutal-team-member {
+  background: #fff;
+  border: 4px solid #000;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.brutal-team-member:hover {
+  transform: translateY(-5px);
+  background-color: #f0f0f0;
+}
+
+.brutal-team-pic img {
+  width: 100%;
+  border: 4px solid #000;
+  margin-bottom: 1rem;
+  background-color: #e0e0e0;
+  padding: 4px;
+}
+
+.brutal-team-info h4 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.brutal-team-info span {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.brutal-social-links a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: #000;
+  border: 2px solid #000;
+  padding: 0.3rem 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.brutal-social-links a:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+
+/* Footer - Brutalism Style */
+.brutal-footer-section {
+  background-color: #fff;
+  color: #000;
+  border-top: 5px solid #000;
+  padding: 4rem 1rem 2rem;
+  font-family: monospace;
+}
+
+.brutal-footer-newsletter {
+  padding: 2rem;
+  border: 3px dashed #000;
+  background-color: #f8f8f8;
+  margin-bottom: 2rem;
+}
+
+.brutal-footer-newsletter h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.brutal-footer-newsletter p {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.brutal-footer-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border: 3px solid #000;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.brutal-footer-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-style: dashed;
+}
+
+.brutal-footer-content {
+  padding-top: 2rem;
+  border-top: 3px solid #000;
+}
+
+.brutal-footer-logo {
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.brutal-footer-contact p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0.25rem 0;
+}
+
+.brutal-social-links a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #000;
+  transition: transform 0.2s;
+}
+
+.brutal-social-links a:hover {
+  transform: rotate(8deg) scale(1.1);
+}
+
+.brutal-footer-copyright {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-top: 2px dashed #000;
+  padding-top: 1rem;
+}
+
+
+.brutal-glitch {
+  width: 100%;
+  height: 30px;
+  margin: 0 0;
+  overflow: hidden;
+}
+
+.glitch-line {
+  animation: glitch-move 1.2s infinite linear alternate;
+}
+
+@keyframes glitch-move {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-2px);
+  }
+  66% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+  background: #f4f4f4;
+  position: relative;
+  height: 3.5rem; /* atau sesuai tinggi font */
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee-scroll 15s linear infinite;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive font-size */
+@media (max-width: 768px) {
+  .marquee-content {
+    font-size: 1.2rem;
+  }
+
+  .marquee {
+    height: 2.5rem;
+  }
+}
