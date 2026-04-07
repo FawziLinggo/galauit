@@ -254,3 +254,58 @@ toggle.addEventListener("click", () => {
     toggle.textContent = "🌙";
   }
 });
+
+
+const sections = [
+  "hero",
+  "about",
+  "work-process",
+  "faq-2",
+  "recent-blog-posts",
+  "team",
+  "footer"
+];
+
+const fill = document.querySelector(".progress-fill");
+const text = document.querySelector(".progress-text");
+
+function updateProgress() {
+  let currentIndex = 0;
+
+  sections.forEach((id, index) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const rect = el.getBoundingClientRect();
+
+    // kalau section sudah masuk viewport
+    if (rect.top <= window.innerHeight * 0.5) {
+      currentIndex = index + 1;
+    }
+  });
+
+const progress = Math.round((currentIndex / sections.length) * 100);
+
+fill.style.width = progress + "%";
+text.textContent = progress + "%";
+
+// 🎮 warna ala game
+if (progress < 40) {
+  fill.style.background = "#ff3b3b"; // merah (danger)
+} else if (progress < 80) {
+  fill.style.background = "#ffd900"; // kuning (mid)
+} else {
+  fill.style.background = "#6BFF2A"; // hijau (safe)
+}
+}
+
+
+window.addEventListener("scroll", updateProgress);
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", () => {
+    setTimeout(updateProgress, 600);
+  });
+});
+
+updateProgress();

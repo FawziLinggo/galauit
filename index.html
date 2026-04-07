@@ -19,38 +19,42 @@
     <!-- Custom Brutalism Style -->
     <link href="assets/css/brutalism.css" rel="stylesheet" />
     <link href="assets/css/dark-brutalism.css" rel="stylesheet" />
-    <link href="assets/css/mobile-brutalism.css" rel="stylesheet" media="(max-width: 768px)"/>
+    <link href="assets/css/mobile-brutalism.css" rel="stylesheet" media="(max-width: 768px)" />
   </head>
+<div class="progress-wrapper">
+  <div class="progress-label">PROGRESS</div>
+
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+    <div class="progress-segments"></div>
+    <span class="progress-text">0%</span>
+  </div>
+</div>
   <body class="index-page">
     <div class="cursor-glow"></div>
-    <div class="scroll-progress"></div>
-    
     <header id="header" class="brutal-header scrolled">
-     
       <div class="container d-flex align-items-center justify-content-between">
-  
-  <a href="index.html" class="brutal-logo">GALAUIT</a>
-
-  <!-- NAV di tengah -->
-  <nav class="brutal-nav" id="navMenu">
-    <a href="#hero">Beranda</a>
-    <a href="#about">Tentang</a>
-    <a href="#work-process">Layanan</a>
-    <a href="#footer">Kontak</a>
-    <a href="https://galauit.com/blog/" target="_blank">Blog</a>
-  </nav>
-
-  <!-- ACTIONS di kanan -->
-  <div class="header-actions">
-    <button id="themeToggle" class="theme-toggle">🌙</button>
-    <button class="brutal-nav-toggle" id="navToggle">☰</button>
-  </div>
-
-</div>
+        <a href="index.html" class="brutal-logo">GALAUIT</a>
+        <!-- NAV di tengah -->
+        <nav class="brutal-nav" id="navMenu">
+          <a href="#hero">Beranda</a>
+          <a href="#about">Tentang</a>
+          <a href="#work-process">Layanan</a>
+          <a href="#footer">Kontak</a>
+          <a href="https://galauit.com/blog/" target="_blank">Blog</a>
+        </nav>
+        <!-- ACTIONS di kanan -->
+        <div class="header-actions">
+          <button id="themeToggle" class="theme-toggle">🌙</button>
+          <button class="brutal-nav-toggle" id="navToggle">☰</button>
+        </div>
+      </div>
     </header>
     <main class="main">
       <!-- Hero Section -->
       <section id="hero" class="brutal-hero-section full-section">
+        
+        <a href="#about" class="nav-arrow right">→</a>
         <div class="container">
           <div class="row align-items-start g-4">
             <div class="col-lg-6 text-section order-1 order-lg-1">
@@ -66,12 +70,15 @@
             </div>
           </div>
         </div>
-        <a href="#about" class="scroll-down">↓</a>
       </section>
       <!-- /Hero Section -->
       <!-- About Section -->
+       
       <section id="about" class="brutal-about-section">
+        <a href="#hero" class="nav-arrow left">←</a>
+        <a href="#work-process" class="nav-arrow right">→</a>
         <div class="container">
+          
           <div class="brutal-subbox">
             <h3 class="brutal-subtitle"> Selamat Datang di <span class="highlight">Galauit</span>
             </h3>
@@ -83,18 +90,15 @@
             </ul>
             <p class="brutal-paragraph"> Atau temen temen bisa langsung diskusi terkait Pembuatan website, Aplikasi, Data Engineering, dan lain lain dengan mentor kami yang berpengalaman di bidangnya. Yuk, ubah rasa galau jadi skill yang bisa kamu banggakan! </p>
           </div>
-          <a href="#work-process" class="scroll-down">↓</a>
       </section>
-      <!-- /About Section -->
-      <!-- Why Us Section -->
-      <!-- <section id="why-us" class="brutal-why-us-section"><div class="container"><div class="row align-items-center"><div class="col-lg-7"><div class="brutal-box px-4 py-4"><h3 class="brutal-heading"> Belajar Santai, <span class="highlight">Ilmu Serius</span></h3><ul class="brutal-list"><li><span class="brutal-bullet">✔</span> Baru mulai belajar pemrograman atau data
-                  </li><li><span class="brutal-bullet">✔</span> Ingin masuk dunia kerja sebagai Data Engineer atau Software Engineer
-                  </li><li><span class="brutal-bullet">✔</span> Pengen belajar dari real use-case, bukan cuma teori
-                  </li></ul></div></div><div class="col-lg-5 text-center"><div class="brutal-img-wrapper"><img src="assets/img/why-us.png" class="img-fluid brutal-img" alt="Why Us Image" /></div></div></div></div></section>
-      /Why Us Section -->
+      
       <!-- Program Unggulan Section -->
       <section id="work-process" class="work-section">
+        
+        <a href="#about" class="nav-arrow left">←</a>
+        <a href="#faq-2" class="nav-arrow right">→</a>
         <div class="container">
+          <a href="#about" class="scroll-up">↑</a> 
           <div class="work-title mb-5 text-center">
             <h2 class="work-heading">Program Unggulan</h2>
             <p class="work-paragraph"> Siap-siap upgrade skill kamu dengan cara yang fun, real, dan sesuai kebutuhan industri. Dari kelas pemula sampai proyek akhir yang bisa kamu banggakan, semua dirancang biar kamu nggak cuma ngerti, tapi juga siap kerja. </p>
@@ -146,12 +150,14 @@
             <button id="next">→</button>
           </div>
         </div>
-        <a href="#faq-2" class="scroll-down">↓</a>
       </section>
       <!-- /Work Process Section -->
       <!-- Faq 2 Section -->
       <section id="faq-2" class="brutal-faq-section">
         <!-- Section Title -->
+         
+        <a href="#work-process" class="nav-arrow left">←</a>
+        <a href="#recent-blog-posts" class="nav-arrow right">→</a>
         <div class="container brutal-faq-title">
           <h2>FAQ</h2>
           <p>Galauit.com – Jawaban buat kamu yang masih bingung mulai belajar IT</p>
@@ -188,11 +194,13 @@
             </div>
           </div>
         </div>
-        <a href="#recent-blog-posts" class="scroll-down">↓</a>
       </section>
       <!-- /Faq 2 Section -->
       <!-- Recent Blog Postst Section -->
       <section id="recent-blog-posts" class="brutal-blog-section">
+        
+        <a href="#faq-2" class="nav-arrow left">←</a>
+        <a href="#team" class="nav-arrow right">→</a>
         <div class="container brutal-section-title">
           <h2>Bacaan Ringan, Ilmu Mendalam</h2>
           <p>Rasa bingungmu bisa jadi kekuatan. Asal kamu mulai dari sekarang</p>
@@ -202,13 +210,14 @@
             <!-- Artikel akan dimuat via JS -->
           </div>
         </div>
-        <a href="#team" class="scroll-down">↓</a>
       </section>
       <script type="module" src="assets/js/blog-loader.js"></script>
       <script type="module" src="assets/js/nav-toggle.js"></script>
       <!-- /Recent Blog Postst Section -->
       <!-- Team Section -->
       <section id="team" class="brutal-team-section">
+        <a href="#recent-blog-posts" class="nav-arrow left">←</a>
+        <a href="#footer" class="nav-arrow right">→</a>
         <div class="container brutal-section-title">
           <h2>Team</h2>
           <p>Kenalan dengan Tim Hebat di Balik Galauit</p>
@@ -220,66 +229,61 @@
                 <div class="brutal-team-pic">
                   <img src="assets/img/CLoseUpF.JPG" alt="Fawzi Linggo" class="img-fluid" />
                 </div>
-<div class="brutal-team-info">
-  <h4>Fawzi Linggo</h4>
-  <span>Software Engineer</span>
-
-  <div class="brutal-social-links">
-    
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/fawzi-linggo/" target="_blank">
-      <i class="bi bi-linkedin"></i>
-    </a>
-
-    <!-- Download CV -->
-    <a href="assets/docs/CV-Fawzi-Linggo.pdf" download>
-      <i class="bi bi-file-earmark-arrow-down">CV</i>
-    </a>
-
-  </div>
-</div>
+                <div class="brutal-team-info">
+                  <h4>Fawzi Linggo</h4>
+                  <span>Software Engineer</span>
+                  <div class="brutal-social-links">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/fawzi-linggo/" target="_blank">
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+                    <!-- Download CV -->
+                    <a href="assets/docs/CV-Fawzi-Linggo.pdf" download>
+                      <i class="bi bi-file-earmark-arrow-down">CV</i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- Tambahkan member lainnya di sini -->
           </div>
         </div>
-        <a href="#footer" class="scroll-down">↓</a>
       </section>
       <!-- /Team Section -->
-       
-    <section  id="footer" class="brutal-footer-section">
-      <div class="brutal-footer-newsletter">
-        <div class="container text-center">
-          <h2>Daripada Galau Sendiri, Mending Gabung Komunitasnya.</h2>
-          <p>Yuk gabung sama teman-teman yang juga lagi belajar. Karena belajar itu lebih seru kalau bareng.</p>
-          <a href="https://api.whatsapp.com/send/?phone=6285362224540&text=Halo+Kak%0ASaya+galau+terkait+it+nih&type=phone_number&app_absent=0" class="brutal-footer-btn" target="_blank" rel="noopener noreferrer"> Join Komunitas Galauit </a>
+      <section id="footer" class="brutal-footer-section">
+        
+        <div class="brutal-footer-newsletter">
+          <div class="container text-center">
+            <h2>Daripada Galau Sendiri, Mending Gabung Komunitasnya.</h2>
+            <p>Yuk gabung sama teman-teman yang juga lagi belajar. Karena belajar itu lebih seru kalau bareng.</p>
+            <a href="https://api.whatsapp.com/send/?phone=6285362224540&text=Halo+Kak%0ASaya+galau+terkait+it+nih&type=phone_number&app_absent=0" class="brutal-footer-btn" target="_blank" rel="noopener noreferrer"> Join Komunitas Galauit </a>
+          </div>
         </div>
-      </div>
-      <div class="container brutal-footer-content">
-        <div class="row gy-4 justify-content-between">
-          <div class="col-lg-4 col-md-6">
-            <a href="index.html" class="brutal-footer-logo">Galauit</a>
-            <div class="brutal-footer-contact">
-              <p>Mustika Jaya, Dukuh Zambrud</p>
-              <p>Bekasi 535022</p>
-              <p>
-                <strong>Phone:</strong> +62 853 6222 4540
-              </p>
-              <p>
-                <strong>Email:</strong> info@galauit.com
-              </p>
+        <div class="container brutal-footer-content">
+          <div class="row gy-4 justify-content-between">
+            <div class="col-lg-4 col-md-6">
+              <a href="index.html" class="brutal-footer-logo">Galauit</a>
+              <div class="brutal-footer-contact">
+                <p>Mustika Jaya, Dukuh Zambrud</p>
+                <p>Bekasi 535022</p>
+                <p>
+                  <strong>Phone:</strong> +62 853 6222 4540
+                </p>
+                <p>
+                  <strong>Email:</strong> info@galauit.com
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <h4>Ngoding Nggak Harus Sendirian</h4>
+              <p>Follow Galauit dan temukan komunitas belajar yang relate sama kamu</p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-12">
-            <h4>Ngoding Nggak Harus Sendirian</h4>
-            <p>Follow Galauit dan temukan komunitas belajar yang relate sama kamu</p>
-          </div>
         </div>
-      </div>
-      <div class="brutal-footer-copyright text-center mt-4">
-        <p>&copy; <strong>Galauit</strong> - All Rights Reserved </p>
-      </div>
-    </section>
+        <div class="brutal-footer-copyright text-center mt-4">
+          <p>&copy; <strong>Galauit</strong> - All Rights Reserved </p>
+        </div>
+      </section>
     </main>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

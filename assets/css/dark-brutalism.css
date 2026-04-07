@@ -526,7 +526,10 @@ body.dark-mode .marquee-content {
 body.dark-mode .scroll-down {
   color: #6BFF2A;
 }
-
+/* dark mode */
+body.dark-mode .scroll-up {
+  color: #6BFF2A;
+}
 /* =========================
    DARK MODE - REVEAL (optional glow)
 ========================= */
@@ -540,4 +543,52 @@ body.dark-mode .theme-toggle {
   background: #6BFF2A;
   border-color: #6BFF2A;
   color: #000;
+}
+
+
+/* =========================
+   DARK MODE - PROGRESS BAR
+========================= */
+
+body.dark-mode .progress-label {
+  color: #6BFF2A;
+}
+
+/* BAR */
+body.dark-mode .progress-bar {
+    background: linear-gradient(90deg, #000, #111);
+  border: 3px solid #6BFF2A;
+  box-shadow: 4px 4px 0 #6BFF2A;
+}
+
+/* FILL */
+body.dark-mode .progress-fill {
+  box-shadow: 0 0 10px rgba(107, 255, 42, 0.9);
+    animation: glowPulse 1.5s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 5px #6BFF2A;
+  }
+  to {
+    box-shadow: 0 0 15px #6BFF2A;
+  }
+}
+
+/* SEGMENT */
+body.dark-mode .progress-segments {
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 18px,
+    #6BFF2A 18px,
+    #6BFF2A 20px
+  );
+  opacity: 0.25;
+}
+
+/* TEXT */
+body.dark-mode .progress-text {
+  color: #6BFF2A;
 }

@@ -39,13 +39,13 @@ function revealOnScroll() {
 document.querySelector("main").addEventListener("scroll", revealOnScroll);
 
 
-const sections = document.querySelectorAll("section");
+const sectionsGlow = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".brutal-nav a");
 
 document.querySelector("main").addEventListener("scroll", () => {
   let current = "";
 
-  sections.forEach((section) => {
+  sectionsGlow.forEach((section) => {
     const sectionTop = section.offsetTop;
     if (document.querySelector("main").scrollTop >= sectionTop - 100) {
       current = section.getAttribute("id");

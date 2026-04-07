@@ -1105,8 +1105,9 @@ ul {
 }
 
 .scroll-down {
+  z-index: 99999;
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 2rem;
@@ -1156,4 +1157,124 @@ ul {
   z-index: 9999;
   box-shadow: 0 0 10px #6BFF2A;
   transition: width 0.1s linear;
+}
+
+
+
+.progress-wrapper {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  z-index: 10;
+  pointer-events: none;
+  font-family: monospace;
+}
+
+/* Label */
+.progress-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 4px;
+}
+
+/* BAR */
+.progress-bar {
+  position: relative;
+  height: 22px;
+  background: #111;
+  border: 3px solid #000;
+  box-shadow: 4px 4px 0 #000;
+  overflow: hidden;
+    image-rendering: pixelated;
+}
+
+/* FILL */
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #ff0000;
+  transition: width 0.3s ease, background 0.3s ease;
+    box-shadow: 0 0 8px rgba(107, 255, 42, 0.6);
+      transition: width 0.4s cubic-bezier(0.4, 2, 0.6, 1);
+}
+
+/* SEGMENT (kotak-kotak RPG) */
+.progress-segments {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 18px,
+    #000 18px,
+    #000 20px
+  );
+  opacity: 0.4;
+}
+
+/* TEXT */
+.progress-text {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.scroll-up {
+  position: absolute;
+  top: 50px; /* posisi di atas section */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  animation: bounceUp 1.5s infinite;
+  margin-top: 60px;
+}
+
+@keyframes bounceUp {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -10px); }
+}
+
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  z-index: 10;
+  animation: pulse 1.5s infinite;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+/* kiri */
+.nav-arrow.left {
+  left: 20px;
+}
+
+/* kanan */
+.nav-arrow.right {
+  right: 20px;
+}
+
+/* dark mode */
+body.dark-mode .nav-arrow {
+  color: #6BFF2A;
+}
+
+/* animasi */
+@keyframes pulse {
+  0%, 100% { transform: translateY(-50%) scale(1); }
+  50% { transform: translateY(-50%) scale(1.2); }
 }
