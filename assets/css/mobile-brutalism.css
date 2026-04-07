@@ -53,6 +53,10 @@
     display: flex;
   }
 
+    .brutal-header .brutal-nav a {
+    color: #FFD900;
+  }
+
   .brutal-nav a {
     color: #FFD900; /* kuning */
     font-weight: 700;
