@@ -592,3 +592,12 @@ body.dark-mode .progress-segments {
 body.dark-mode .progress-text {
   color: #6BFF2A;
 }
+
+
+
+/* DARK MODE */
+body.dark-mode .warning-box {
+  background: #6BFF2A;
+  color: #000;
+  border-color: #000;
+}

@@ -309,3 +309,52 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 updateProgress();
+
+
+// 🔒 Disable klik kanan
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
+
+// 🔒 Blok shortcut umum DevTools
+document.addEventListener("keydown", function (e) {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) ||
+    (e.ctrlKey && e.key === "U")
+  ) {
+    e.preventDefault();
+  }
+});
+
+// 🔒 Detect DevTools (simple trick)
+let devtoolsOpen = false;
+
+setInterval(() => {
+  const threshold = 160;
+
+  if (
+    window.outerWidth - window.innerWidth > threshold ||
+    window.outerHeight - window.innerHeight > threshold
+  ) {
+    if (!devtoolsOpen) {
+      devtoolsOpen = true;
+      showWarning();
+    }
+  } else {
+    devtoolsOpen = false;
+    hideWarning();
+  }
+}, 1000);
+
+// ⚠️ SHOW WARNING
+function showWarning() {
+  const warn = document.getElementById("devtools-warning");
+  if (warn) warn.style.display = "flex";
+}
+
+// ❌ HIDE WARNING
+function hideWarning() {
+  const warn = document.getElementById("devtools-warning");
+  if (warn) warn.style.display = "none";
+}

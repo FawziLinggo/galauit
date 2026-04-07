@@ -184,6 +184,10 @@
     display: none;
   }
 
+  .nav-arrow {
+    display: none;
+  }
+
   .work-controls {
     display: none;
   }
