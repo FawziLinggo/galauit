@@ -18,24 +18,35 @@
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom Brutalism Style -->
     <link href="assets/css/brutalism.css" rel="stylesheet" />
+    <link href="assets/css/dark-brutalism.css" rel="stylesheet" />
     <link href="assets/css/mobile-brutalism.css" rel="stylesheet" media="(max-width: 768px)"/>
   </head>
   <body class="index-page">
     <div class="cursor-glow"></div>
+    <div class="scroll-progress"></div>
+    
     <header id="header" class="brutal-header scrolled">
-      <div class="container d-flex justify-content-between align-items-center flex-wrap">
-        <a href="index.html" class="brutal-logo">GALAUIT</a>
-        <!-- Toggle button (hamburger) -->
-        <button class="brutal-nav-toggle" id="navToggle" aria-label="Toggle navigation"> ☰ </button>
-        <!-- Navigation Menu -->
-        <nav class="brutal-nav" id="navMenu">
-          <a href="#hero">Beranda</a>
-          <a href="#about">Tentang</a>
-          <a href="#work-process">Layanan</a>
-          <a href="#footer">Kontak</a>
-          <a href="https://galauit.com/blog/" target="_blank">Blog</a>
-        </nav>
-      </div>
+     
+      <div class="container d-flex align-items-center justify-content-between">
+  
+  <a href="index.html" class="brutal-logo">GALAUIT</a>
+
+  <!-- NAV di tengah -->
+  <nav class="brutal-nav" id="navMenu">
+    <a href="#hero">Beranda</a>
+    <a href="#about">Tentang</a>
+    <a href="#work-process">Layanan</a>
+    <a href="#footer">Kontak</a>
+    <a href="https://galauit.com/blog/" target="_blank">Blog</a>
+  </nav>
+
+  <!-- ACTIONS di kanan -->
+  <div class="header-actions">
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+    <button class="brutal-nav-toggle" id="navToggle">☰</button>
+  </div>
+
+</div>
     </header>
     <main class="main">
       <!-- Hero Section -->
@@ -235,8 +246,8 @@
         <a href="#footer" class="scroll-down">↓</a>
       </section>
       <!-- /Team Section -->
-    </main>
-    <footer id="footer" class="brutal-footer-section">
+       
+    <section  id="footer" class="brutal-footer-section">
       <div class="brutal-footer-newsletter">
         <div class="container text-center">
           <h2>Daripada Galau Sendiri, Mending Gabung Komunitasnya.</h2>
@@ -268,7 +279,8 @@
       <div class="brutal-footer-copyright text-center mt-4">
         <p>&copy; <strong>Galauit</strong> - All Rights Reserved </p>
       </div>
-    </footer>
+    </section>
+    </main>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>

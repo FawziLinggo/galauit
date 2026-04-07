@@ -12,19 +12,6 @@
 }
 
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --brutal-yellow: #1a1a1a;   
-    --brutal-white: #111;      
-    --brutal-black: #fff;       
-    --brutal-green: #6BFF2A;    
-  }
-
-  body {
-    background: #000;
-    color: #fff;
-  }
-} */
 
 /* brutalism.css */
 
@@ -64,7 +51,6 @@ h1, h2, h3 {
 
 main {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   height: 100vh;
   scroll-behavior: smooth;
 }
@@ -99,6 +85,11 @@ main {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  body:not(.dark-mode) .brutal-nav a {
+    color: #FFD900;
+  }
+}
 
 .brutal-header {
   position: fixed;
@@ -113,12 +104,11 @@ main {
 .brutal-header .brutal-nav a {
   color: #000;
 }
-
 .brutal-header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 9990;
   background: transparent;
   border-bottom: none;
 }
@@ -181,7 +171,7 @@ main {
   color: #000;
   border: 2px dashed #000;
   transform: scale(1.05);
-}
+} 
 
 .brutal-section {
   border-top: 4px solid #000;
@@ -226,6 +216,7 @@ ul {
   padding: 2rem 1rem;
   font-size: 0.9rem;
   border-top: 5px solid #fff200;
+
 }
 
 
@@ -633,6 +624,7 @@ ul {
   border-bottom: 3px solid #000;
   padding-bottom: 0.5rem;
   display: inline-block;
+  margin-top: 80px;
 }
 
 .brutal-faq-title p {
@@ -808,6 +800,7 @@ ul {
   text-transform: uppercase;
   border-bottom: 4px solid #000;
   padding-bottom: 0.5rem;
+  margin-top: 80px;
 }
 
 .brutal-section-title p {
@@ -905,6 +898,7 @@ ul {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 0.5rem;
+  margin-top: 80px;
 }
 
 .brutal-section-title p {
@@ -979,6 +973,7 @@ ul {
   border: 3px dashed #000;
   background-color: #f8f8f8;
   margin-bottom: 2rem;
+  margin-top: 80px;
 }
 
 .brutal-footer-newsletter h2 {
@@ -1135,4 +1130,30 @@ ul {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-actions {  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 0%;
+  background: #6BFF2A; /* hijau brutal */
+  z-index: 9999;
+  box-shadow: 0 0 10px #6BFF2A;
+  transition: width 0.1s linear;
 }

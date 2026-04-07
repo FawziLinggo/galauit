@@ -1,0 +1,543 @@
+
+
+.theme-toggle {
+  margin-left: 1rem;
+  border: 2px solid #000;
+  background: #fffc00;
+  color: #000;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  box-shadow: 3px 3px 0 #000;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: translate(-2px, -2px);
+}
+
+
+
+body.dark-mode {
+  background: #111;
+  color: #fff;
+}
+
+/* =========================
+   DARK MODE - HEADER
+========================= */
+
+/* Header utama */
+body.dark-mode .brutal-header {
+  background: #111;
+  border-bottom: 3px solid #6BFF2A;
+}
+
+/* Nav link */
+body.dark-mode .brutal-header .brutal-nav a {
+  color: #6BFF2A;
+}
+
+body.dark-mode .brutal-header .brutal-nav a:hover {
+  background: #6BFF2A;
+  color: #000;
+}
+
+
+/* Logo */
+body.dark-mode .brutal-logo {
+  background: #000;
+  color: #6BFF2A;
+  border-color: #6BFF2A;
+}
+
+/* Saat scroll */
+body.dark-mode .brutal-header.scrolled {
+  background: #000;
+  box-shadow: 0 4px 0 #6BFF2A;
+}
+
+/* Logo saat scroll */
+body.dark-mode .brutal-header.scrolled .brutal-logo {
+  color: #6BFF2A !important;
+  border-color: #6BFF2A !important;
+}
+
+
+/* Burger button */
+body.dark-mode .brutal-nav-toggle {
+  border: 2px solid #6BFF2A;
+  color: #6BFF2A;
+  background: #000;
+}
+
+/* Burger hover */
+body.dark-mode .brutal-nav-toggle:hover {
+  background: #6BFF2A;
+  color: #000;
+}
+
+/* Logo */
+body.dark-mode .brutal-logo {
+  background: #000;
+  color: #6BFF2A;
+  border-color: #6BFF2A;
+}
+
+/* =========================
+   DARK MODE - HEADER END
+========================= */
+
+
+/* =========================
+   DARK MODE - HERO START
+========================= */
+/* Hero */
+body.dark-mode .brutal-hero-section {
+  background: #111; /* jangan pure hitam */
+  color: #fff;
+  border-bottom: 5px solid #6BFF2A;
+}
+
+/* Background pattern */
+body.dark-mode .brutal-hero-section::before {
+  background-image:
+    radial-gradient(#6BFF2A 1px, transparent 1px),
+    linear-gradient(#6BFF2A 1px, transparent 1px),
+    linear-gradient(90deg, #6BFF2A 1px, transparent 1px);
+
+  opacity: 0.08; /* sedikit lebih terang biar kelihatan */
+}
+
+/* Title */
+body.dark-mode .brutal-title {
+  background: #000;
+  color: #6BFF2A;
+  border-left: 4px solid #6BFF2A;
+}
+
+/* Tagline / paragraph */
+body.dark-mode .brutal-tagline {
+  color: #ccc;
+}
+
+/* Button */
+body.dark-mode .brutal-btn {
+  background: #6BFF2A;
+  color: #000;
+  border: 2px solid #000;
+}
+
+body.dark-mode .brutal-btn:hover {
+  background: #000;
+  color: #6BFF2A;
+  border: 2px solid #6BFF2A;
+}
+
+/* Image frame */
+body.dark-mode .brutal-image-frame {
+  background: #000;
+  border: 3px solid #6BFF2A;
+  box-shadow: 8px 8px 0 #6BFF2A;
+}
+
+/* Optional glow biar hidup */
+body.dark-mode .brutal-image-frame img {
+  filter: contrast(1.1) brightness(1.05);
+}
+/* =========================
+   DARK MODE - HERO END
+========================= */
+/* =========================
+   DARK MODE - ABOUT
+========================= */
+
+body.dark-mode .brutal-about-section {
+  background: #111;
+  color: #fff;
+}
+
+/* Grid background */
+body.dark-mode .brutal-about-section::before {
+  background-image: 
+    linear-gradient(#6BFF2A 1px, transparent 1px),
+    linear-gradient(90deg, #6BFF2A 1px, transparent 1px);
+
+  opacity: 0.04; /* sedikit lebih kelihatan dari light */
+}
+
+/* GIF tetap tapi kasih efek */
+body.dark-mode .brutal-about-section::after {
+  filter: brightness(0.9) contrast(1.1);
+  opacity: 0.9;
+}
+
+/* Line accent */
+body.dark-mode .brutal-about-section .line-accent {
+  background: #6BFF2A;
+}
+
+/* Box utama */
+body.dark-mode .brutal-box {
+  background: #1a1a1a;
+  border: 3px solid #6BFF2A;
+  box-shadow: 8px 8px 0 #6BFF2A;
+}
+
+/* Sub box */
+body.dark-mode .brutal-subbox {
+  background: #000;
+  border: 2px dashed #6BFF2A;
+}
+
+/* Title */
+body.dark-mode .brutal-heading {
+  color: #6BFF2A;
+  border-bottom: 4px double #6BFF2A;
+}
+
+/* Subtitle */
+body.dark-mode .brutal-subtitle {
+  color: #fff;
+}
+
+/* Highlight */
+body.dark-mode .highlight {
+  background: #6BFF2A;
+  color: #000;
+}
+
+/* Text */
+body.dark-mode .brutal-paragraph {
+  color: #ccc;
+}
+
+/* List */
+body.dark-mode .brutal-list li {
+  color: #ddd;
+}
+
+/* =========================
+   DARK MODE - WORK
+========================= */
+
+/* Section */
+body.dark-mode .work-section {
+  background: #111;
+  border-top: 6px solid #6BFF2A;
+}
+
+/* Fade edge */
+body.dark-mode .work-section::after {
+  background: linear-gradient(to left, #111, transparent);
+}
+
+/* Card */
+body.dark-mode .work-card {
+  background: #1a1a1a;
+  color: #fff;
+  border: 4px solid #6BFF2A;
+  box-shadow: 6px 6px 0 #6BFF2A;
+}
+
+/* Hover card */
+body.dark-mode .work-card:hover {
+  background: #6BFF2A;
+  color: #000;
+  box-shadow: 10px 10px 0 #000;
+}
+
+/* Title */
+body.dark-mode .work-card-title {
+  color: #fff;
+}
+
+/* Badge */
+body.dark-mode .work-badge {
+  background: #6BFF2A;
+  color: #000;
+  border: 2px solid #000;
+}
+
+/* Button controls */
+body.dark-mode .work-controls button {
+  background: #6BFF2A;
+  color: #000;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 0 #6BFF2A;
+}
+
+body.dark-mode .work-controls button:hover {
+  background: #000;
+  color: #6BFF2A;
+  border: 3px solid #6BFF2A;
+}
+
+/* Optional: scrollbar glow (kalau mau keliatan) */
+body.dark-mode .work-slider::-webkit-scrollbar-thumb {
+  background: #6BFF2A;
+}
+
+
+/* =========================
+   DARK MODE - FAQ
+========================= */
+
+body.dark-mode .brutal-faq-section {
+  background: #111;
+  color: #fff;
+  border-top: 4px solid #6BFF2A;
+}
+
+/* Title */
+body.dark-mode .brutal-faq-title h2 {
+  color: #6BFF2A;
+  border-bottom: 3px solid #6BFF2A;
+}
+
+body.dark-mode .brutal-faq-title p {
+  color: #ccc;
+}
+
+/* Item */
+body.dark-mode .brutal-faq-item {
+  background: #1a1a1a;
+  border: 2px solid #6BFF2A;
+  color: #fff;
+}
+
+/* Hover */
+body.dark-mode .brutal-faq-item:hover {
+  background: #000;
+}
+
+/* Active */
+body.dark-mode .brutal-faq-item.active {
+  background: #000;
+  box-shadow: 6px 6px 0 #6BFF2A;
+}
+
+/* Content */
+body.dark-mode .faq-content {
+  color: #ccc;
+}
+
+/* Toggle + */
+body.dark-mode .faq-toggle {
+  color: #6BFF2A;
+}
+
+/* =========================
+   DARK MODE - BLOG
+========================= */
+
+body.dark-mode .brutal-blog-section {
+  background: #111;
+  border-top: 4px solid #6BFF2A;
+  color: #fff;
+}
+
+/* Card */
+body.dark-mode .brutal-blog-card {
+  background: #1a1a1a;
+  color: #fff;
+  border: 4px solid #6BFF2A;
+  box-shadow: 6px 6px 0 #6BFF2A;
+}
+
+/* Hover card */
+body.dark-mode .brutal-blog-card:hover {
+  background: #6BFF2A;
+  color: #000;
+  transform: rotate(-1deg) scale(1.03);
+  box-shadow: 10px 10px 0 #000;
+}
+
+/* Title */
+body.dark-mode .brutal-blog-content h3 {
+  color: #fff;
+}
+
+/* Paragraph / text */
+body.dark-mode .brutal-blog-content p {
+  color: #ccc;
+}
+
+
+/* =========================
+   DARK MODE - TEAM
+========================= */
+
+body.dark-mode .brutal-team-section {
+  background: #111;
+  color: #fff;
+  border-top: 4px solid #6BFF2A;
+  border-bottom: 4px solid #6BFF2A;
+}
+
+/* Background grid */
+body.dark-mode .brutal-team-section::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%236BFF2A' stroke-width='1'%3E%3Cpath d='M0 10 H100 M0 20 H100 M0 30 H100 M0 40 H100 M0 50 H100 M0 60 H100 M0 70 H100 M0 80 H100 M0 90 H100 M10 0 V100 M20 0 V100 M30 0 V100 M40 0 V100 M50 0 V100 M60 0 V100 M70 0 V100 M80 0 V100 M90 0 V100'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.03; /* lebih subtle */
+}
+
+/* Title */
+body.dark-mode .brutal-section-title h2 {
+  color: #6BFF2A;
+}
+
+body.dark-mode .brutal-section-title p {
+  color: #ccc;
+}
+
+/* Card */
+body.dark-mode .brutal-team-member {
+  background: #1a1a1a;
+  border: 4px solid #6BFF2A;
+  color: #fff;
+  box-shadow: 6px 6px 0 #6BFF2A;
+}
+
+/* Hover */
+body.dark-mode .brutal-team-member:hover {
+  background: #000;
+  transform: translateY(-6px);
+  box-shadow: 10px 10px 0 #000;
+}
+
+/* Image */
+body.dark-mode .brutal-team-pic img {
+  border: 4px solid #6BFF2A;
+  background: #000;
+}
+
+/* Nama */
+body.dark-mode .brutal-team-info h4 {
+  color: #fff;
+}
+
+/* Role */
+body.dark-mode .brutal-team-info span {
+  color: #aaa;
+}
+
+/* Social icon */
+body.dark-mode .brutal-social-links a {
+  color: #6BFF2A;
+  border: 2px solid #6BFF2A;
+  background: #000;
+}
+
+/* Hover social */
+body.dark-mode .brutal-social-links a:hover {
+  background: #6BFF2A;
+  color: #000;
+  transform: scale(1.1);
+}
+
+
+/* =========================
+   DARK MODE - FOOTER
+========================= */
+
+body.dark-mode .brutal-footer-section {
+  background-color: #0d0d0d;
+  color: #fff;
+  border-top: 5px solid #6BFF2A;
+}
+
+/* Newsletter */
+body.dark-mode .brutal-footer-newsletter {
+  background-color: #111;
+  border: 3px dashed #6BFF2A;
+}
+
+body.dark-mode .brutal-footer-newsletter h2 {
+  color: #6BFF2A;
+}
+
+body.dark-mode .brutal-footer-newsletter p {
+  color: #ccc;
+}
+
+/* Button */
+body.dark-mode .brutal-footer-btn {
+  background-color: #6BFF2A;
+  color: #000;
+  border: 3px solid #6BFF2A;
+}
+
+body.dark-mode .brutal-footer-btn:hover {
+  background-color: #000;
+  color: #6BFF2A;
+  border: 3px dashed #6BFF2A;
+}
+
+/* Content */
+body.dark-mode .brutal-footer-content {
+  border-top: 3px solid #6BFF2A;
+}
+
+/* Logo */
+body.dark-mode .brutal-footer-logo {
+  color: #6BFF2A;
+}
+
+/* Contact text */
+body.dark-mode .brutal-footer-contact p {
+  color: #aaa;
+}
+
+/* Social */
+body.dark-mode .brutal-social-links a {
+  color: #6BFF2A;
+}
+
+body.dark-mode .brutal-social-links a:hover {
+  color: #000;
+  background: #6BFF2A;
+  transform: rotate(8deg) scale(1.1);
+}
+
+/* Copyright */
+body.dark-mode .brutal-footer-copyright {
+  border-top: 2px dashed #6BFF2A;
+  color: #777;
+}
+
+/* =========================
+   DARK MODE - MARQUEE
+========================= */
+
+body.dark-mode .marquee {
+  background: #000;
+  border-top: 4px solid #6BFF2A;
+  border-bottom: 4px solid #6BFF2A;
+}
+
+body.dark-mode .marquee-content {
+  color: #6BFF2A;
+}
+
+/* =========================
+   DARK MODE - SCROLL DOWN
+========================= */
+
+body.dark-mode .scroll-down {
+  color: #6BFF2A;
+}
+
+/* =========================
+   DARK MODE - REVEAL (optional glow)
+========================= */
+
+body.dark-mode .reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.dark-mode .theme-toggle {
+  background: #6BFF2A;
+  border-color: #6BFF2A;
+  color: #000;
+}
