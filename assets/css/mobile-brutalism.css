@@ -3,6 +3,7 @@
   --brutal-green: #6BFF2A;
   --brutal-black: #000;
   --brutal-white: #fff;
+    color-scheme: light;
 }
 /* =========================
    MOBILE RESPONSIVE
@@ -11,6 +12,7 @@
 
   /* GLOBAL */
   body {
+    background: var(--brutal-yellow);
     overflow: auto;
   }
 
@@ -207,7 +209,7 @@
 }
 
 
-@media (max-width: 768px) and (prefers-color-scheme: dark) {
+/* @media (max-width: 768px) and (prefers-color-scheme: dark) {
 
   .brutal-nav {
     background: #111;
@@ -240,4 +242,4 @@
     border-color: #6BFF2A;
   }
 
-}
+} */

@@ -3,6 +3,7 @@
   --brutal-green: #6BFF2A;
   --brutal-black: #000;
   --brutal-white: #fff;
+    color-scheme: light;
 }
 
 ::selection {
@@ -11,19 +12,19 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --brutal-yellow: #1a1a1a;   /* jadi gelap */
-    --brutal-white: #111;       /* bukan putih lagi */
-    --brutal-black: #fff;       /* dibalik */
-    --brutal-green: #6BFF2A;    /* tetap neon biar pop */
+    --brutal-yellow: #1a1a1a;   
+    --brutal-white: #111;      
+    --brutal-black: #fff;       
+    --brutal-green: #6BFF2A;    
   }
 
   body {
     background: #000;
     color: #fff;
   }
-}
+} */
 
 /* brutalism.css */
 
