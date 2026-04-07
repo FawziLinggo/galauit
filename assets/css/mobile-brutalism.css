@@ -205,3 +205,39 @@
   
 
 }
+
+
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+
+  .brutal-nav {
+    background: #111;
+    border-top: 2px solid #6BFF2A;
+  }
+
+  .brutal-nav a {
+    color: #6BFF2A;
+    border-bottom: 1px dashed #6BFF2A;
+  }
+
+  .brutal-nav a:hover {
+    background: #6BFF2A;
+    color: #000;
+  }
+
+  .brutal-header {
+    background: #000;
+  }
+
+  .brutal-box {
+    background: #111;
+    color: #fff;
+    border-color: #6BFF2A;
+  }
+
+  .work-card {
+    background: #111;
+    color: #fff;
+    border-color: #6BFF2A;
+  }
+
+}

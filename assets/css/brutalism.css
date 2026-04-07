@@ -10,6 +10,21 @@
   color: #3FD21A;
 }
 
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brutal-yellow: #1a1a1a;   /* jadi gelap */
+    --brutal-white: #111;       /* bukan putih lagi */
+    --brutal-black: #fff;       /* dibalik */
+    --brutal-green: #6BFF2A;    /* tetap neon biar pop */
+  }
+
+  body {
+    background: #000;
+    color: #fff;
+  }
+}
+
 /* brutalism.css */
 
 html {
