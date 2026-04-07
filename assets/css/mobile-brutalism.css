@@ -1,0 +1,203 @@
+:root {
+  --brutal-yellow: #f5e6a3;
+  --brutal-green: #6BFF2A;
+  --brutal-black: #000;
+  --brutal-white: #fff;
+}
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+  /* GLOBAL */
+  body {
+    overflow: auto;
+  }
+
+  main {
+    scroll-snap-type: none;
+    height: auto;
+    overflow: visible;
+  }
+
+  section {
+    height: auto;
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .container {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  /* =========================
+     HEADER / NAV
+  ========================= */
+
+  .brutal-header {
+    position: static;
+  }
+
+.brutal-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #000; /* tetap hitam biar kontras */
+    border-top: 3px solid #FFD900;
+    margin-top: 0;
+    padding: 0.5rem 0;
+  }
+
+  .brutal-nav.show {
+    display: flex;
+  }
+
+  .brutal-nav a {
+    color: #FFD900; /* kuning */
+    font-weight: 700;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    border-bottom: 1px dashed #FFD900;
+    transition: all 0.2s ease;
+  }
+
+  .brutal-nav a:hover {
+    background: #FFD900;
+    color: #000;
+  }
+
+  .brutal-nav-toggle {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 2px solid #FFD900;
+    padding: 4px 8px;
+    background: #FFD900;
+    color: #000;
+  }
+
+  .brutal-nav a {
+  position: relative;
+}
+
+.brutal-nav a::before {
+  content: ">";
+  margin-right: 8px;
+  color: #6BFF2A;
+}
+
+  /* =========================
+     HERO
+  ========================= */
+
+  .brutal-hero-section {
+    padding: 2rem 0;
+    text-align: left;
+  }
+
+  .text-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .brutal-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .brutal-tagline {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .brutal-btn {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .brutal-image-frame {
+    margin: 0 auto;
+    max-width: 95%;
+    padding: 5px;
+    transform: rotate(-1deg);
+  }
+
+  .brutal-image-frame img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* =========================
+     MARQUEE
+  ========================= */
+
+  .marquee-content {
+    font-size: 1.2rem;
+  }
+
+  .marquee {
+    height: 2.5rem;
+  }
+
+  /* =========================
+     WORK / CARD
+  ========================= */
+
+  .work-slider {
+    gap: 16px;
+  }
+
+  .work-item {
+    min-width: 85%;
+  }
+
+  .work-card {
+    transform: none !important;
+  }
+
+  /* =========================
+     ABOUT
+  ========================= */
+
+  .brutal-box {
+    padding: 2rem;
+  }
+
+  .brutal-subbox {
+    padding: 1.5rem;
+  }
+
+  .brutal-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .brutal-paragraph {
+    font-size: 1rem;
+  }
+
+  /* =========================
+     FAQ
+  ========================= */
+
+  .brutal-faq-item h3 {
+    font-size: 1rem;
+  }
+
+
+  /* Display None for scroll-down on mobile */
+  .scroll-down {
+    display: none;
+  }
+
+  .work-controls {
+    display: none;
+  }
+
+  .brutal-about-section::after {
+    display: none;
+  }
+
+  
+
+}
