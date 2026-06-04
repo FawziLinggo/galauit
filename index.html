@@ -1,324 +1,378 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Galauit - Belajar IT Tanpa Drama</title>
-    <meta name="description" content="Belajar IT dari dasar, langsung praktik, dan tanpa ribet." />
-    <meta name="keywords" content="belajar IT, data engineering, pemrograman, galauit, mentoring IT" />
-    <!-- Brutalist Favicon -->
+    <meta
+      name="description"
+      content="Belajar IT dari dasar, langsung praktik, dan tanpa drama bersama Galauit."
+    />
+    <meta
+      name="keywords"
+      content="belajar IT, data engineering, pemrograman, mentoring IT, jasa website, galauit"
+    />
     <link href="assets/img/favicon.webp" rel="icon" />
     <link href="assets/img/apple-touch-icon.webp" rel="apple-touch-icon" />
-    <!-- Fonts: Brutalist look with monospaced feel -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Optional Bootstrap for layout/grid (boleh tetap dipakai) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom Brutalism Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link href="assets/css/brutalism.css" rel="stylesheet" />
-    <link href="assets/css/dark-brutalism.css" rel="stylesheet" />
-    <link href="assets/css/mobile-brutalism.css" rel="stylesheet" media="(max-width: 768px)" />
   </head>
-<div class="progress-wrapper">
-  <div class="progress-label">PROGRESS</div>
 
-  <div class="progress-bar">
-    <div class="progress-fill"></div>
-    <div class="progress-segments"></div>
-    <span class="progress-text">0%</span>
-  </div>
-</div>
+  <body>
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="scroll-meter" aria-hidden="true">
+      <span class="scroll-meter__fill"></span>
+    </div>
 
+    <header class="site-header" id="header">
+      <div class="shell header-shell">
+        <a href="#hero" class="brand" aria-label="Galauit home">
+          <span class="brand__mark">G</span>
+          <span class="brand__text">GALAUIT</span>
+        </a>
 
-<div id="devtools-warning">
-  <div class="warning-box">
-  </div>
-</div>
-
-  <body class="index-page">
-    <div class="cursor-glow"></div>
-    <header id="header" class="brutal-header scrolled">
-      <div class="container d-flex align-items-center justify-content-between">
-        <a href="index.html" class="brutal-logo">GALAUIT</a>
-        <!-- NAV di tengah -->
-        <nav class="brutal-nav" id="navMenu">
-          <a href="#hero">Beranda</a>
+        <nav class="site-nav" id="siteNav" aria-label="Navigasi utama">
           <a href="#about">Tentang</a>
-          <a href="#work-process">Layanan</a>
-          <a href="#footer">Kontak</a>
-          <a href="https://galauit.com/blog/" target="_blank">Blog</a>
+          <a href="#programs">Program</a>
+          <a href="#services">Layanan</a>
+          <a href="#blog">Blog</a>
+          <a href="#faq">FAQ</a>
         </nav>
-        <!-- ACTIONS di kanan -->
+
         <div class="header-actions">
-          <button id="themeToggle" class="theme-toggle">🌙</button>
-          <button class="brutal-nav-toggle" id="navToggle">☰</button>
+          <a
+            class="header-cta"
+            href="https://api.whatsapp.com/send/?phone=6285362224540&text=Halo+Kak%2C+saya+ingin+konsultasi+tentang+Galauit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Konsultasi
+          </a>
+          <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
-    <main class="main">
-      <!-- Hero Section -->
-      <section id="hero" class="brutal-hero-section full-section">
-        
-        <a href="#about" class="nav-arrow right">→</a>
-        <div class="container">
-          <div class="row align-items-start g-4">
-            <div class="col-lg-6 text-section order-1 order-lg-1">
-              <h1 class="brutal-title">Belajar IT Tanpa Ribet</h1>
-              <p class="brutal-tagline"> Bingung mulai karier di dunia teknologi? Mulai dari dasar, praktik langsung, sampai siap kerja. Yuk, belajar bareng <strong>Galauit!</strong>
-              </p>
-              <a href="https://api.whatsapp.com/send/?phone=6285362224540" class="brutal-btn" target="_blank">Konsultasi Kegalauanmu</a>
+
+    <main>
+      <section class="hero-section section-pad" id="hero">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">/ booting: career-ready_it</p>
+            <h1>
+              <span>Belajar IT</span>
+              <span>Tanpa Drama</span>
+            </h1>
+            <p class="hero-lead">
+              Dari nol sampai siap bikin project nyata. Galauit bantu kamu belajar data, coding,
+              dan software development dengan alur yang jelas, praktis, dan manusiawi.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                href="https://api.whatsapp.com/send/?phone=6285362224540&text=Halo+Kak%2C+saya+galau+mulai+belajar+IT"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mulai Konsultasi
+              </a>
+              <a class="btn btn-secondary" href="#programs">Lihat Program</a>
             </div>
-            <div class="col-lg-6 order-2 order-lg-2">
-              <div class="brutal-image-frame">
-                <img src="assets/img/hero-img-4.png" alt="Hero Image" class="img-fluid" />
+
+            <div class="status-grid" aria-label="Status Galauit">
+              <div>
+                <span>Track</span>
+                <strong>Data + Software</strong>
               </div>
+              <div>
+                <span>Level</span>
+                <strong>Pemula Friendly</strong>
+              </div>
+              <div>
+                <span>Mode</span>
+                <strong>Mentoring Praktik</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-panel" aria-label="Galauit learning terminal">
+            <div class="terminal-window">
+              <div class="terminal-topbar">
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>galauit-os</p>
+              </div>
+              <div class="terminal-body">
+                <p><span>$</span> init belajar-it --from-zero</p>
+                <p><span>></span> loading roadmap: python, sql, etl, web</p>
+                <p><span>></span> mentor connected: ready</p>
+                <p><span>></span> output: skill yang bisa dipakai kerja</p>
+              </div>
+            </div>
+
+            <div class="image-console">
+              <img src="assets/img/hero-img-4.png" alt="Ilustrasi belajar IT bersama Galauit" />
+              <div class="image-console__tag">LIVE MODULE</div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Hero Section -->
-      <!-- About Section -->
-       
-      <section id="about" class="brutal-about-section">
-        <a href="#hero" class="nav-arrow left">←</a>
-        <a href="#work-process" class="nav-arrow right">→</a>
-        <div class="container">
-          
-          <div class="brutal-subbox">
-            <h3 class="brutal-subtitle"> Selamat Datang di <span class="highlight">Galauit</span>
-            </h3>
-            <p class="brutal-paragraph"> Tempat belajar IT tanpa ribet — dari nol sampai siap kerja. </p>
-            <ul class="brutal-list">
-              <li>🚀 Mulai dari dasar (no experience welcome)</li>
-              <li>💻 Fokus skill real (bukan teori doang)</li>
-              <li>🎯 Arah karier jelas (Data & Software)</li>
+
+      <section class="section-pad about-section" id="about">
+        <div class="shell split-grid">
+          <div>
+            <p class="eyebrow">/ why_galauit</p>
+            <h2>Belajar dibuat lebih jelas, bukan lebih ribet.</h2>
+          </div>
+          <div class="terminal-card about-card">
+            <p>
+              Galauit adalah tempat belajar IT untuk kamu yang masih bingung harus mulai dari
+              mana. Fokusnya bukan hafalan teori, tapi latihan yang bisa kamu lihat hasilnya.
+            </p>
+            <ul class="check-list">
+              <li>Materi dimulai dari dasar dan bertahap.</li>
+              <li>Project nyata untuk portofolio.</li>
+              <li>Arah karier di data engineering dan software development.</li>
+              <li>Bisa diskusi kebutuhan website, aplikasi, dan data pipeline.</li>
             </ul>
-            <p class="brutal-paragraph"> Atau temen temen bisa langsung diskusi terkait Pembuatan website, Aplikasi, Data Engineering, dan lain lain dengan mentor kami yang berpengalaman di bidangnya. Yuk, ubah rasa galau jadi skill yang bisa kamu banggakan! </p>
-          </div>
-      </section>
-      
-      <!-- Program Unggulan Section -->
-      <section id="work-process" class="work-section">
-        
-        <a href="#about" class="nav-arrow left">←</a>
-        <a href="#faq-2" class="nav-arrow right">→</a>
-        <div class="container">
-          <div class="work-title mb-5 text-center">
-            <h2 class="work-heading">Program Unggulan</h2>
-            <p class="work-paragraph"> Siap-siap upgrade skill kamu dengan cara yang fun, real, dan sesuai kebutuhan industri. Dari kelas pemula sampai proyek akhir yang bisa kamu banggakan, semua dirancang biar kamu nggak cuma ngerti, tapi juga siap kerja. </p>
-          </div>
-          <div class="work-slider">
-            <div class="work-item">
-              <div class="work-card">
-                <img src="assets/img/steps/steps-1.webp" alt="Step 1" class="work-img-top" loading="lazy" />
-                <div class="work-card-body">
-                  <div class="work-badge">01</div>
-                  <h3 class="work-card-title">Learning Path Data Engineering (Track Pemula)</h3>
-                  <p class="work-card-text"> Mulai dari Python, SQL, ETL, Kafka, hingga proyek akhir </p>
-                </div>
-              </div>
-            </div>
-            <div class="work-item">
-              <div class="work-card">
-                <img src="assets/img/steps/steps-2.webp" alt="Step 2" class="work-img-top" loading="lazy" />
-                <div class="work-card-body">
-                  <div class="work-badge">02</div>
-                  <h3 class="work-card-title">Mentoring 1-on-1</h3>
-                  <p class="work-card-text"> Dapatkan sesi privat bareng mentor berpengalaman </p>
-                </div>
-              </div>
-            </div>
-            <div class="work-item">
-              <div class="work-card">
-                <img src="assets/img/steps/steps-3.webp" alt="Step 3" class="work-img-top" loading="lazy" />
-                <div class="work-card-body">
-                  <div class="work-badge">03</div>
-                  <h3 class="work-card-title">Mini Bootcamp Weekend</h3>
-                  <p class="work-card-text"> Cocok buat yang kerja tapi tetap ingin upgrade skill </p>
-                </div>
-              </div>
-            </div>
-            <div class="work-item">
-              <div class="work-card">
-                <img src="assets/img/steps/steps-4.png" alt="Step 4" class="work-img-top" loading="lazy" />
-                <div class="work-card-body">
-                  <div class="work-badge">04</div>
-                  <h3 class="work-card-title">Jasa Pembuatan Website & Aplikasi</h3>
-                  <p class="work-card-text"> Butuh website atau aplikasi untuk bisnis, portofolio, atau proyek pribadi? </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="work-controls">
-            <button id="prev">←</button>
-            <button id="next">→</button>
           </div>
         </div>
       </section>
-      <!-- /Work Process Section -->
-      <!-- Faq 2 Section -->
-      <section id="faq-2" class="brutal-faq-section">
-        <!-- Section Title -->
-         
-        <a href="#work-process" class="nav-arrow left">←</a>
-        <a href="#recent-blog-posts" class="nav-arrow right">→</a>
-        <div class="container brutal-faq-title">
-          <h2>FAQ</h2>
-          <p>Galauit.com – Jawaban buat kamu yang masih bingung mulai belajar IT</p>
-        </div>
-        <!-- End Section Title -->
-        <div class="container">
-          <div class="brutal-faq-container">
-            <div class="brutal-faq-item">
-              <h3>
-                <i class="bi bi-question-circle"></i> Apa sih Galauit itu?
-              </h3>
-              <div class="faq-content">
-                <p>Galauit.com adalah platform pembelajaran teknologi yang fokus membantu pemula untuk masuk ke dunia Data Engineering, pemrograman, dan software development. Kami hadir sebagai teman belajar yang nggak sok jago, tapi paham betul bagaimana rasanya bingung memulai. Belajar di sini lebih dari sekadar coding, ini tentang perjalanan mengubah rasa galau jadi potensi.</p>
+
+      <section class="section-pad programs-section" id="programs">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">/ modules</p>
+            <h2>Program Unggulan</h2>
+            <p>
+              Pilih jalur belajar yang sesuai dengan fase kamu sekarang. Semua program diarahkan
+              ke praktik, portfolio, dan pemahaman yang bisa dipakai.
+            </p>
+          </div>
+
+          <div class="module-grid">
+            <article class="module-card">
+              <img src="assets/img/steps/steps-1.webp" alt="Learning path data engineering" loading="lazy" />
+              <div class="module-card__body">
+                <span>MODULE 01</span>
+                <h3>Learning Path Data Engineering</h3>
+                <p>Python, SQL, ETL, Kafka, dan project akhir untuk memahami alur data modern.</p>
               </div>
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="brutal-faq-item">
-              <h3>
-                <i class="bi bi-question-circle"></i> Apakah Galauit cocok untuk pemula banget?
-              </h3>
-              <div class="faq-content">
-                <p>Banget! Semua materi disusun dari level dasar. Kamu akan dibimbing mulai dari nol: dari kenalan sama Python, konsep database, sampai ke pemahaman alur data modern kayak Kafka dan Airflow. Yang penting kamu punya laptop, waktu, dan niat. Kami bantu sisanya.</p>
+            </article>
+
+            <article class="module-card">
+              <img src="assets/img/steps/steps-2.webp" alt="Mentoring privat IT" loading="lazy" />
+              <div class="module-card__body">
+                <span>MODULE 02</span>
+                <h3>Mentoring 1-on-1</h3>
+                <p>Sesi privat untuk bahas roadmap, debugging, portfolio, atau persiapan kerja.</p>
               </div>
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="brutal-faq-item">
-              <h3>
-                <i class="bi bi-question-circle"></i> Belajarnya online atau offline ya?
-              </h3>
-              <div class="faq-content">
-                <p>Kamu bisa pilih: Online: fleksibel dari rumah, tetap interaktif. Offline: cocok untuk kamu yang lebih fokus kalau belajar tatap muka. Jadwal bisa didiskusikan sesuai kebutuhan, karena kami percaya belajar itu harus adaptif.</p>
+            </article>
+
+            <article class="module-card">
+              <img src="assets/img/steps/steps-3.webp" alt="Bootcamp weekend" loading="lazy" />
+              <div class="module-card__body">
+                <span>MODULE 03</span>
+                <h3>Mini Bootcamp Weekend</h3>
+                <p>Format singkat dan intensif untuk kamu yang tetap ingin belajar sambil kerja.</p>
               </div>
-              <span class="faq-toggle">+</span>
-            </div>
+            </article>
+
+            <article class="module-card">
+              <img src="assets/img/steps/steps-4.png" alt="Jasa website dan aplikasi" loading="lazy" />
+              <div class="module-card__body">
+                <span>MODULE 04</span>
+                <h3>Website & Aplikasi</h3>
+                <p>Bantu bangun website, aplikasi, dan sistem data untuk bisnis atau personal brand.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
-      <!-- /Faq 2 Section -->
-      <!-- Recent Blog Postst Section -->
-      <section id="recent-blog-posts" class="brutal-blog-section">
-        
-        <a href="#faq-2" class="nav-arrow left">←</a>
-        <a href="#team" class="nav-arrow right">→</a>
-        <div class="container brutal-section-title">
-          <h2>Bacaan Ringan, Ilmu Mendalam</h2>
-          <p>Rasa bingungmu bisa jadi kekuatan. Asal kamu mulai dari sekarang</p>
-        </div>
-        <div class="container">
-          <div id="latest-posts" class="row g-4 justify-content-center">
-            <!-- Artikel akan dimuat via JS -->
+
+      <section class="section-pad services-section" id="services">
+        <div class="shell split-grid">
+          <div>
+            <p class="eyebrow">/ services</p>
+            <h2>Bukan cuma kelas. Bisa juga bantu eksekusi.</h2>
+            <p class="section-lead">
+              Kalau kamu butuh partner teknis, Galauit bisa bantu dari diskusi ide sampai
+              implementasi awal.
+            </p>
+          </div>
+
+          <div class="service-stack">
+            <article class="service-item">
+              <i class="bi bi-code-slash" aria-hidden="true"></i>
+              <div>
+                <h3>Website & Landing Page</h3>
+                <p>Untuk bisnis, komunitas, portofolio, dan campaign.</p>
+              </div>
+            </article>
+            <article class="service-item">
+              <i class="bi bi-database" aria-hidden="true"></i>
+              <div>
+                <h3>Data Engineering</h3>
+                <p>Diskusi ETL, automasi data, dashboard, dan pipeline sederhana.</p>
+              </div>
+            </article>
+            <article class="service-item">
+              <i class="bi bi-person-video3" aria-hidden="true"></i>
+              <div>
+                <h3>Mentoring Karier</h3>
+                <p>Bantu pilih roadmap, review portfolio, dan latihan interview teknis.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
-      <script type="module" src="assets/js/blog-loader.js"></script>
-      <script type="module" src="assets/js/nav-toggle.js"></script>
-      <!-- /Recent Blog Postst Section -->
-      <!-- Team Section -->
-      <section id="team" class="brutal-team-section">
-        <a href="#recent-blog-posts" class="nav-arrow left">←</a>
-        <a href="#footer" class="nav-arrow right">→</a>
-        <div class="container brutal-section-title">
-          <h2>Team</h2>
-          <p>Kenalan dengan Tim Hebat di Balik Galauit</p>
+
+      <section class="section-pad blog-section" id="blog">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">/ latest_logs</p>
+            <h2>Bacaan Ringan, Ilmu Mendalam</h2>
+            <p>Artikel terbaru dari blog Galauit akan muncul otomatis di sini.</p>
+          </div>
+          <div id="latest-posts" class="blog-grid" aria-live="polite">
+            <div class="blog-placeholder">Loading artikel terbaru...</div>
+          </div>
         </div>
-        <div class="container">
-          <div class="row gy-5 justify-content-center">
-            <div class="col-lg-4 col-md-6">
-              <div class="brutal-team-member">
-                <div class="brutal-team-pic">
-                  <img src="assets/img/CLoseUpF.JPG" alt="Fawzi Linggo" class="img-fluid" />
-                </div>
-                <div class="brutal-team-info">
-                  <h4>Fawzi Linggo</h4>
-                  <span>Software Engineer</span>
-                  <div class="brutal-social-links">
-                    <!-- LinkedIn -->
-                    <a href="https://www.linkedin.com/in/fawzi-linggo/" target="_blank">
-                      <i class="bi bi-linkedin"></i>
-                    </a>
-                    <!-- Download CV -->
-                    <a href="assets/docs/CV-Fawzi-Linggo.pdf" download>
-                      <i class="bi bi-file-earmark-arrow-down">CV</i>
-                    </a>
-                  </div>
-                </div>
+      </section>
+
+      <section class="section-pad team-section" id="team">
+        <div class="shell split-grid">
+          <div>
+            <p class="eyebrow">/ mentor</p>
+            <h2>Belajar bareng mentor yang ngerti prosesnya.</h2>
+            <p class="section-lead">
+              Bukan sekadar kasih materi, tapi bantu kamu membangun cara berpikir teknis yang rapi.
+            </p>
+          </div>
+
+          <article class="mentor-card">
+            <img src="assets/img/CLoseUpF.JPG" alt="Fawzi Linggo" loading="lazy" />
+            <div>
+              <span>Software Engineer</span>
+              <h3>Fawzi Linggo</h3>
+              <p>Mentor Galauit untuk software development, data, dan project-based learning.</p>
+              <div class="mentor-links">
+                <a href="https://www.linkedin.com/in/fawzi-linggo/" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </a>
+                <a href="assets/docs/CV-Fawzi-Linggo.pdf" download>Download CV</a>
               </div>
             </div>
-            <!-- Tambahkan member lainnya di sini -->
-          </div>
+          </article>
         </div>
       </section>
-      <!-- /Team Section -->
-      <section id="footer" class="brutal-footer-section">
-        
-        <div class="brutal-footer-newsletter">
-          <div class="container text-center">
-            <h2>Daripada Galau Sendiri, Mending Gabung Komunitasnya.</h2>
-            <p>Yuk gabung sama teman-teman yang juga lagi belajar. Karena belajar itu lebih seru kalau bareng.</p>
-            <a href="https://api.whatsapp.com/send/?phone=6285362224540&text=Halo+Kak%0ASaya+galau+terkait+it+nih&type=phone_number&app_absent=0" class="brutal-footer-btn" target="_blank" rel="noopener noreferrer"> Join Komunitas Galauit </a>
+
+      <section class="section-pad faq-section" id="faq">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow">/ faq</p>
+            <h2>Pertanyaan yang sering muncul</h2>
           </div>
-        </div>
-        <div class="container brutal-footer-content">
-          <div class="row gy-4 justify-content-between">
-            <div class="col-lg-4 col-md-6">
-              <a href="index.html" class="brutal-footer-logo">Galauit</a>
-              <div class="brutal-footer-contact">
-                <p>Mustika Jaya, Dukuh Zambrud</p>
-                <p>Bekasi 535022</p>
+
+          <div class="faq-list">
+            <article class="faq-item active">
+              <button type="button" class="faq-question" aria-expanded="true">
+                <span>Apa sih Galauit itu?</span>
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer">
                 <p>
-                  <strong>Phone:</strong> +62 853 6222 4540
-                </p>
-                <p>
-                  <strong>Email:</strong> info@galauit.com
+                  Galauit adalah platform pembelajaran teknologi untuk pemula yang ingin masuk
+                  ke dunia data engineering, pemrograman, dan software development.
                 </p>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <h4>Ngoding Nggak Harus Sendirian</h4>
-              <p>Follow Galauit dan temukan komunitas belajar yang relate sama kamu</p>
-            </div>
+            </article>
+
+            <article class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Apakah cocok untuk pemula banget?</span>
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Cocok. Materi disusun dari dasar, lalu naik ke praktik dan project supaya kamu
+                  punya pegangan yang jelas.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Belajarnya online atau offline?</span>
+                <i class="bi bi-plus-lg" aria-hidden="true"></i>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Bisa didiskusikan sesuai kebutuhan. Formatnya fleksibel, selama target belajar
+                  dan jadwalnya jelas.
+                </p>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="brutal-footer-copyright text-center mt-4">
-          <p>&copy; <strong>Galauit</strong> - All Rights Reserved </p>
+      </section>
+
+      <section class="cta-section" id="contact">
+        <div class="shell cta-panel">
+          <p class="eyebrow">/ join_community</p>
+          <h2>Daripada galau sendiri, mending ngobrol dulu.</h2>
+          <p>
+            Ceritakan posisi kamu sekarang. Kita bantu arahkan langkah belajar atau kebutuhan
+            teknis yang paling masuk akal.
+          </p>
+          <a
+            class="btn btn-primary"
+            href="https://api.whatsapp.com/send/?phone=6285362224540&text=Halo+Kak%2C+saya+ingin+gabung+komunitas+Galauit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join Komunitas Galauit
+          </a>
         </div>
       </section>
     </main>
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <!-- Main JS File -->
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <a href="#hero" class="footer-brand">GALAUIT</a>
+          <p>Belajar IT tanpa drama, dari dasar sampai siap bikin project nyata.</p>
+        </div>
+        <div>
+          <h3>Kontak</h3>
+          <p>Mustika Jaya, Dukuh Zambrud, Bekasi 535022</p>
+          <p>+62 853 6222 4540</p>
+          <p>info@galauit.com</p>
+        </div>
+        <div>
+          <h3>Shortcut</h3>
+          <a href="#programs">Program</a>
+          <a href="#services">Layanan</a>
+          <a href="https://galauit.com/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
+        </div>
+      </div>
+      <div class="shell footer-bottom">
+        <span>© Galauit. All Rights Reserved.</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/blog-loader.js"></script>
     <script src="assets/js/main.js"></script>
-    <!-- script faq -->
-    <script type="module">
-      import {
-        initFaqToggle
-      } from "./assets/js/faq-toggle.js";
-      document.addEventListener("DOMContentLoaded", () => {
-        initFaqToggle();
-      });
-    </script>
-    <!-- script header scroll -->
-    <script type="module">
-      import {
-        initHeaderScroll
-      } from "./assets/js/header-scroll.js";
-      initHeaderScroll();
-    </script>
-    <!-- Main JS File -->
-    <script src="assets/js/glow-cursor.js"></script>
   </body>
 </html>
